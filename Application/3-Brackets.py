@@ -64,7 +64,6 @@ def check_valid(data):
             counter -= 1
         if counter == 0 and length != len(brackets):
             return False
-
     return True
 
 
@@ -123,16 +122,10 @@ def evaluate_expression(data):
             base = 10 ** counter
             result += base * int(i)
             counter += 1
-
     return result
 
-
-def main():
-    user_input = input("Enter an expression: ")
-    if check_valid(user_input):
-        print(evaluate_expression(user_input))
-    else:
-        print("NO")
-
-if __name__ == '__main__':
-    main()
+user_input = input("Enter an expression: ")
+if check_valid(user_input):
+    print(evaluate_expression(user_input))
+else:
+    print("NO")
