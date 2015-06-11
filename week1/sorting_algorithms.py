@@ -35,7 +35,7 @@ def quick_sort(sequence):
     return l + [pivot] + u
 
 
-test_seq3 = generator(10000, 10000)
+test_seq3 = generator(100000, 10000)
 test_seq1 = generator(10000, 10000)
 test_seq2 = generator(10000, 10000)
 
