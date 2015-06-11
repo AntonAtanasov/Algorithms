@@ -1,5 +1,4 @@
-from random_list_generator import generator
-import time
+from random_list_generator import generator, measure_time
 
 
 def selection_sort(sequence):
@@ -34,14 +33,6 @@ def quick_sort(sequence):
     l = quick_sort([x for x in sequence[1:] if x < pivot])
     u = quick_sort([x for x in sequence[1:] if x >= pivot])
     return l + [pivot] + u
-
-
-def measure_time(function, sequence):
-    start = time.time()
-    function(sequence)
-    end = time.time()
-    result = end - start
-    print("Time elapsed for {}: {}".format(function, result))
 
 
 test_seq3 = generator(10000, 10000)
