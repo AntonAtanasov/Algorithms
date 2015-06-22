@@ -55,7 +55,7 @@ def main():
     test.insert(1)
     test.insert(45)
     test.insert(2)
-    # test.heap_sort()
+     # test.heap_sort()
     print(test)
 
 if __name__ == '__main__':
