@@ -58,5 +58,5 @@ def closest_coffee_store(graph, starting_point):
     return min(temp, key=len)
 
 
-for number in range(0, 5):
+for number in range(0, 6):
     print(closest_coffee_store(graph, number))
